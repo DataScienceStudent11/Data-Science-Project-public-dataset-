@@ -1,0 +1,72 @@
+/* Whole page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff5f8;
+    color: #333333;
+}
+
+
+/* Navigation menu */
+nav {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #333333;
+    margin: 10px;
+    text-decoration: none;
+}
+
+
+/* Top introduction */
+header {
+    background-color: #f8d7e3;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    color: #b03060;
+}
+
+
+/* Sections */
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* Headings */
+h2 {
+    color: #b03060;
+}
+
+
+/* Project boxes */
+.project {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #f0b6ca;
+    border-radius: 10px;
+}
+
+
+/* Links */
+a {
+    color: #b03060;
+}
+
+
+/* Footer */
+footer {
+    background-color: #b03060;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
