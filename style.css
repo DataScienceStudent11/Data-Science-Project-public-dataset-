@@ -100,4 +100,25 @@ footer {
     .visual-grid {
         grid-template-columns: 1fr;
     }
+.quality-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.quality-table th {
+    background-color: #8f3d5e;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.quality-table td {
+    padding: 12px;
+    border: 1px solid #e6cbd5;
+}
+
+.quality-table tr:nth-child(even) {
+    background-color: #fff5f7;
 }
