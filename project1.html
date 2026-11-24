@@ -101,8 +101,50 @@
             <h2>02. Data Quality and Preparation</h2>
 
             <p>
-                This section will explain the checks completed to understand the quality of the data and any preparation needed before analysis.
+                Before carrying out the analysis, the dataset was reviewed to understand the structure and identify any data quality issues that could affect the results. This involved checking for missing values, duplicate records, and unusual values.
             </p>
+            <table class="quality-table">
+    <thead>
+        <tr>
+            <th>Data Quality Check</th>
+            <th>What I Checked</th>
+            <th>Outcome</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Missing Values</td>
+            <td>Checked the dataset for blank or null values.</td>
+            <td>There were no null or blank values found. However, four categorical columns contain unknown values, which represent unavailable information rather than empty cells.</td>
+        </tr>
+
+        <tr>
+            <td>Duplicate Records</td>
+            <td>Checked for duplicate records that could affect the analysis.</td>
+            <td>No duplicate rows were found so the full 45.211 record were retained.</td>
+        </tr>
+
+        <tr>
+            <td>Data Types</td>
+            <td>Checked that numerical and categorical fields had appropriate data types.</td>
+            <td>The dataset contained seven numerical fields and ten categorical fields.</td>
+        </tr>
+
+        <tr>
+            <td>Unknown Values</td>
+            <td>Reviewed fields containing the value "unknown".</td>
+            <td>"unknown" occured in job 288 times, education 1,857 times, contact 13,020 times, and poutcome 36,959 times. These were retained as separate categories rather than removed.</td>
+        </tr>
+
+        <tr>
+            <td>pdays = -1</td>
+            <td>Investigated the meaning of -1 before deciding how to treat it.</td>
+            <td>The value of -1 occured in 36,954 records. Every one of these records also had previous = 0, confirming that the customer had not previously been contacted. Therefore -1 is meaningul and was kept as a result.</td>
+        </tr>
+    </tbody>
+</table>
+
 
         </section>
 
